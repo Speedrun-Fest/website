@@ -11,7 +11,7 @@
     <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/album/">
 
     <!-- Bootstrap core CSS -->
-<link href="assets/dist/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/dist/css/bootstrap.css" rel="stylesheet">
 
     <style>
       .bd-placeholder-img {
@@ -66,17 +66,51 @@
 </header>
 
 <main role="main">
+    <section>
+    <div class="container">
+      
+    </div>
+    </section>
 
   <section class="jumbotron text-center">
+    <img src="img/header.png" />
     <div class="container">
-      <h1 class="display-3 text-brown">Game*</h1>
-      <h1 class="display-1 text-brown">Speedrun Fest</h1>
-      <h1 class="display-4 text-brown">for Qwertz</h1>
       <p class="lead text-muted">Rejoignez nous sur Twitch pour 3 jours de speedrun, conférences, démos techniques et création artistique les <b>12, 13 et 14 juin 2020</b> pour soutenir le Qwertz.</p>
       <p>
         <a href="#" class="btn bg-brown my-2">Faire un don au Qwertz</a>
-        <a href="https://twitch.tv/clicgamestar" class="btn bg-brown my-2">Voir le live sur Twitch</a>
+        <a href="#twitch" class="btn bg-brown my-2">Voir le live sur Twitch</a>
       </p>
+    </div>
+  </section>
+  
+  <section>
+    <div class="container" id="twitch">
+      <script src="https://embed.twitch.tv/embed/v1.js"></script>
+      <div class="embed-responsive embed-responsive-16by9" id="alivestream"></div>
+      <script type="text/javascript">
+        new Twitch.Embed("alivestream", {
+          width: '100%',
+          height: '100%',
+          channel: "clicgamestar",
+          layout: "video"
+        });
+      </script>
+      <p></p>
+    </div>
+  </section>
+  
+  <section>
+    <div class="container">
+      <div class="row">
+          <div class="col-md-4 text-right">
+            <img src="img/infos.png" />
+          </div>
+          <div class="col-md-8">
+            <h2>Game* Speedrun Fest, c'est quoi ?</h2>
+            <p>Dans l'idée, on va passer trois jours environ à réaliser des performances et des conférences sur le thème du "Speedrun". On aura des tentatives de record du monde, des tables rondes, des défis créatifs, etc.</p>
+            <p>Tu ne sais pas forcément ce que c'est ? Ne t'inquiètes pas ! On est là pour t'expliquer, alors rejoins-nous pour trois jours de folie, tout en soutenant notre bar préféré !</p>
+          </div>
+      </div>
     </div>
   </section>
 
@@ -84,8 +118,8 @@
     <div class="container">
       <h2>Programme</h2>
       <p>Restez à l'affut ! Le programme de l'événement sera révélé la semaine précédent le live !</p>
+    </div>
   </section>
-
 </main>
 
 <footer class="text-muted">
