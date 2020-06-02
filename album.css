@@ -1,0 +1,54 @@
+body {
+  background-color: #f3dbb4;
+  font-family: futura,sans-serif;
+}
+
+.bg-brown {
+  background-color: #d3ad11;
+}
+
+.text-brown {
+  color: #7c551f;
+}
+
+.display-1, .display-2, .display-3, .display-4{
+font-family: rig-solid-bold-fill,sans-serif;
+font-weight: 700;
+font-style: normal;
+  text-transform: uppercase;
+
+}
+
+.jumbotron {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  margin-bottom: 0;
+  background-color: #f3dbb4;
+}
+@media (min-width: 768px) {
+  .jumbotron {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
+
+.jumbotron p:last-child {
+  margin-bottom: 0;
+}
+
+.jumbotron h1 {
+  font-weight: 300;
+}
+
+.jumbotron .container {
+  max-width: 40rem;
+}
+
+footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+footer p {
+  margin-bottom: .25rem;
+}
