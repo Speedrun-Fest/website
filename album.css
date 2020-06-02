@@ -3,6 +3,8 @@ html {
 }
 
 body {
+  background: url('./img/bg.png') no-repeat right bottom fixed,url('./img/bg2.png') no-repeat left top fixed;
+  
   background-color: #f3dbb4;
   font-family: futura,sans-serif;
 }
