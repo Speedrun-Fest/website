@@ -49,6 +49,11 @@ body {
   max-width: 40rem;
 }
 
+.container {
+  
+  margin-bottom: 1rem;
+}
+
 footer {
   padding-top: 3rem;
   padding-bottom: 3rem;
