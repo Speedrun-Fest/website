@@ -102,7 +102,7 @@ ul.timeline > li:before {
   background: url('./img/cible.png') no-repeat;
   background-size: 42px;
   line-height: 42px;
-  padding-left: 50px;
+  padding-left: 0px;
   padding-bottom: 7px;
   list-style: none;
 }
