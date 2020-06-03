@@ -124,3 +124,7 @@ ul.timeline > li:before {
   padding-bottom: 7px;
   list-style: none;
 }
+
+#twitch {
+    margin-bottom: 2.5rem;
+}
