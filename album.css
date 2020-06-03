@@ -58,6 +58,10 @@ footer p {
   margin-bottom: .25rem;
 }
 
+lead {
+  text: #7c551f;
+}
+
 ul.timeline {
   list-style-type: none;
   position: relative;
