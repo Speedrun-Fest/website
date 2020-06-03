@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  background: url('./img/bg.png') no-repeat right bottom fixed,url('./img/bg2.png') no-repeat left top fixed;
+  /*background: url('./img/bg.png') no-repeat right bottom fixed,url('./img/bg2.png') no-repeat left top fixed;*/
   
   background-color: #f3dbb4;
   font-family: futura,sans-serif;
@@ -90,16 +90,28 @@ ul.timeline > li:before {
 }
 
 .target {
-  vertical-align: middle;
-  list-style-image: url('./img/target.png');
+  background: url('./img/cible.png') no-repeat;
+  background-size: 42px;
+  line-height: 42px;
+  padding-left: 50px;
+  padding-bottom: 7px;
+  list-style: none;
 }
 
 .time {
-  vertical-align: middle;
-  list-style-image: url('./img/time.png');
+  background: url('./img/clock.png') no-repeat;
+  background-size: 42px;
+  line-height: 42px;
+  padding-left: 50px;
+  padding-bottom: 7px;
+  list-style: none;
 }
 
 .online {
-  vertical-align: middle;
-  list-style-image: url('./img/online.png');
+  background: url('./img/lieu.png') no-repeat;
+  background-size: 42px;
+  line-height: 42px;
+  padding-left: 50px;
+  padding-bottom: 7px;
+  list-style: none;
 }
