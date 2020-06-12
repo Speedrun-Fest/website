@@ -9,6 +9,10 @@ body {
   font-family: futura,sans-serif;
 }
 
+.card-body {
+  background-color: #f3dbb4;
+}
+
 .bg-brown {
   background-color: #d3ad11;
 }
