@@ -3,22 +3,28 @@ html {
 }
 
 body {
-  /*background: url('./img/bg.png') no-repeat right bottom fixed,url('./img/bg2.png') no-repeat left top fixed;*/
+  background: url('./img/FOND.png') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  /*background: url('./img/FOND.png') no-repeat right bottom fixed,url('./img/FOND.png') no-repeat left top fixed;*/
   
-  background-color: #f3dbb4;
+  /*background-color: #f3dbb4;*/
   font-family: futura,sans-serif;
+  color: #A4DAF2;
 }
 
 .card-body {
   background-color: #f3dbb4;
 }
 
-.bg-brown {
-  background-color: #d3ad11;
+.bg-global {
+  background-color: #FFC700;
 }
 
-.text-brown {
-  color: #7c551f;
+.text-global, .lead {
+  color: #AEBDF9;
 }
 
 .display-1, .display-2, .display-3, .display-4{
@@ -67,17 +73,14 @@ footer p {
   margin-bottom: .25rem;
 }
 
-lead {
-  text: #7c551f;
-}
-
 ul.timeline {
   list-style-type: none;
   position: relative;
 }
+
 ul.timeline:before {
   content: ' ';
-  background: #d3ad11;
+  background: #D61800;
   display: inline-block;
   position: absolute;
   left: 29px;
@@ -85,17 +88,19 @@ ul.timeline:before {
   height: 100%;
   z-index: 400;
 }
+
 ul.timeline > li {
   margin: 20px 0;
   padding-left: 20px;
 }
+
 ul.timeline > li:before {
   content: ' ';
-  background: #f3dbb4;
+  background: #FFC700;
   display: inline-block;
   position: absolute;
   border-radius: 50%;
-  border: 3px solid #d3ad11;
+  border: 3px solid #D61800;
   left: 20px;
   width: 20px;
   height: 20px;
@@ -103,7 +108,7 @@ ul.timeline > li:before {
 }
 
 .target {
-  background: url('./img/cible.png') no-repeat;
+  background: url('./img/icon.png') no-repeat;
   background-size: 42px;
   line-height: 42px;
   padding-left: 0px;
@@ -112,7 +117,7 @@ ul.timeline > li:before {
 }
 
 .time {
-  background: url('./img/clock.png') no-repeat;
+  background: url('./img/icon.png') no-repeat;
   background-size: 42px;
   line-height: 42px;
   padding-left: 50px;
@@ -121,7 +126,7 @@ ul.timeline > li:before {
 }
 
 .online {
-  background: url('./img/lieu.png') no-repeat;
+  background: url('./img/icon.png') no-repeat;
   background-size: 42px;
   line-height: 42px;
   padding-left: 50px;
