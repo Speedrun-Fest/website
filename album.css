@@ -1,30 +1,44 @@
+:root {
+  /* For ease of use and maintenance, feel free to modify the following variables */
+  --text-main-color: #A4DAF2;
+  --text-lead-color: #AEBDF9;
+  --text-global-color: #AEBDF9;
+  --timeline-circle-color: #FFC700;
+  --timeline-line-color: #D61800;
+  --element-bg-color: #FFC700;
+  --global-bg-image: url('./img/bg.png');
+  --global-bg-color: #f3dbb4;  /* To use when no global-bg-image */
+  --icon-target: url('./img/icon.png');
+  --icon-time: url('./img/icon.png');
+  --icon-online: url('./img/icon.png');
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  background: url('./img/FOND.png') no-repeat center center fixed;
+  background: var(--global-bg-image) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  /*background: url('./img/FOND.png') no-repeat right bottom fixed,url('./img/FOND.png') no-repeat left top fixed;*/
-  
-  /*background-color: #f3dbb4;*/
-  font-family: futura,sans-serif;
-  color: #A4DAF2;
-}
+  /*background-color: var(--global-bg-color);*/
 
-.card-body {
-  background-color: #f3dbb4;
+  font-family: futura,sans-serif;
+  color: var(--text-main-color);
 }
 
 .bg-global {
-  background-color: #FFC700;
+  background-color: var(--element-bg-color);
 }
 
-.text-global, .lead {
-  color: #AEBDF9;
+.text-global {
+  color: var(--text-global-color);
+}
+
+.lead {
+  color: var(--text-lead-color);
 }
 
 .display-1, .display-2, .display-3, .display-4{
@@ -34,33 +48,7 @@ body {
   text-transform: uppercase;
 }
 
-.jumbotron {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  margin-bottom: 0;
-  background-color: #f3dbb4;
-}
-@media (min-width: 768px) {
-  .jumbotron {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
-  }
-}
-
-.jumbotron p:last-child {
-  margin-bottom: 0;
-}
-
-.jumbotron h1 {
-  font-weight: 300;
-}
-
-.jumbotron .container {
-  max-width: 40rem;
-}
-
 main .container {
-  
   margin-bottom: 1rem;
 }
 
@@ -80,7 +68,7 @@ ul.timeline {
 
 ul.timeline:before {
   content: ' ';
-  background: #D61800;
+  background: var(--timeline-line-color);
   display: inline-block;
   position: absolute;
   left: 29px;
@@ -96,11 +84,11 @@ ul.timeline > li {
 
 ul.timeline > li:before {
   content: ' ';
-  background: #FFC700;
+  background: var(--timeline-circle-color);
   display: inline-block;
   position: absolute;
   border-radius: 50%;
-  border: 3px solid #D61800;
+  border: 3px solid var(--timeline-line-color);
   left: 20px;
   width: 20px;
   height: 20px;
@@ -108,7 +96,7 @@ ul.timeline > li:before {
 }
 
 .target {
-  background: url('./img/icon.png') no-repeat;
+  background: var(--icon-target) no-repeat;
   background-size: 42px;
   line-height: 42px;
   padding-left: 0px;
@@ -117,7 +105,7 @@ ul.timeline > li:before {
 }
 
 .time {
-  background: url('./img/icon.png') no-repeat;
+  background: var(--icon-time) no-repeat;
   background-size: 42px;
   line-height: 42px;
   padding-left: 50px;
@@ -126,7 +114,7 @@ ul.timeline > li:before {
 }
 
 .online {
-  background: url('./img/icon.png') no-repeat;
+  background: var(--icon-online) no-repeat;
   background-size: 42px;
   line-height: 42px;
   padding-left: 50px;
