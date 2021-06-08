@@ -6,7 +6,7 @@
   --timeline-circle-color: #FFC700;
   --timeline-line-color: #D61800;
   --element-bg-color: #FFC700;
-  --global-bg-image: url('./img/FOND.png');
+  --global-bg-image: url('./img/bg.png');
   --global-bg-color: #f3dbb4;  /* To use when no global-bg-image */
   --icon-target: url('./img/icon.png');
   --icon-time: url('./img/icon.png');
